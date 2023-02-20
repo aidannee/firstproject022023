@@ -1,0 +1,26 @@
+{
+  "name": "firstproject022023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidannee/firstproject022023.git"
+  },
+  "author": "Aidan Nee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aidannee/firstproject022023/issues"
+  },
+  "homepage": "https://github.com/aidannee/firstproject022023#readme",
+  "devDependencies": {
+    "install": "^0.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
