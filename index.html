@@ -20,25 +20,43 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="banner">
-      <div class="d-flex flex-column justify-content-center w-75">
-        <div><h1 class="text-center">AIDAN NEE</h1></div>
-
-        <p class="text-center" id="parag">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          velit dolore tempora dolorem beatae in facilis exercitationem
-          architecto fuga officia tenetur accusamus, esse molestiae sapiente
-          optio ut quod, eligendi aut?
-        </p>
-
-        <div class="buttonarea d-flex justify-content-center">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
+    <div
+      class="banner d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        id="ban.text"
+        class="d-flex flex-column justify-content-center z-2 align-items-center w-75"
+      >
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <h1 class="text-center">AIDAN NEE</h1>
         </div>
+
+        <marquee scrollamount="30"
+          >JUNIOR WEB DEVELOPER | HAIRDRESSER | RUGBY PLAYER | FOODIE |
+          CROSSFITER</marquee
+        >
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/73qdWXs3UvU976xfu6D6Np?utm_source=generator"
+          width="50%"
+          height="80"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <!-- <div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-outline-secondary">Left</button>
+  <button type="button" class="btn btn-outline-secondary">Middle</button>
+  <button type="button" class="btn btn-outline-secondary">Right</button>
+</div> -->
       </div>
-      <div id="fade"></div>
+
+      <!-- <div class="z-1" id="fade"></div> -->
     </div>
+
+    <!-- SECTION 1 -->
+
     <div id="bgfade">
       <section class="w-75" id="sectone">
         <nav class="d-flex flex-row justify-content-between">
@@ -52,41 +70,265 @@
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </li>
+            <li>
+              <a target="_blank" href="https://github.com/aidannee"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
           </ul>
         </nav>
 
-        <marquee scrollamount="30"
-          >JUNIOR WEB DEVELOPER | HAIRDRESSER | RUGBY PLAYER | FOODIE</marquee
-        >
-
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          quibusdam repellat eligendi, velit et, at quis sapiente delectus sit
-          labore totam inventore non molestias. Dolores unde nisi culpa delectus
-          expedita! Voluptatibus voluptate consectetur quos. Minima dolores
-          ipsum iure consectetur rerum quas excepturi nesciunt? Maxime velit
-          voluptate facilis. Explicabo architecto est nemo mollitia laboriosam
-          odit sequi quaerat modi dolorum possimus recusandae, corrupti minima
-          nostrum voluptate culpa velit aut laborum. In nam consequatur
-          obcaecati eum architecto provident quia dolore voluptatum, quae
-          dolores fuga, facere laboriosam minus dicta repudiandae dolorum.
-          Minima sed incidunt temporibus odio porro voluptas sunt optio quod,
-          dicta atque eos.
+        <div id="bio">
+          <p>
+            Born in the west of Ireland, I grew up in the quiet countryside
+            before pursuing a career in hairdressing. I began working backstage
+            for fashion shows and photoshoots in 2008 during high school before
+            deciding to work in a salon the following year. I began training
+            with Toni&Guy in 2011 and picked up an award for Assistant of the
+            Year in 2013. Later that year I moved to Dublin and began developing
+            my upstyling and haircutting skills under the tutelage of Toni&Guy
+            Ireland's head educator Katherine Sweeney. At this point
+            hairdressing was the only career I had ever worked and so I needed
+            to diversify my skillset. In the four following years: I moved to
+            west Germany and to south Ireland before settling in Berlin while
+            working at a bank, music festival, hotel restaurant, an airline, a
+            customer service website and a cat shelter. I returned to the salon
+            environment, working as an educator for Toni&Guy in Berlin before
+            the Corona pandemic shook the world. Based now in Berlin, I am
+            building up my client base in this city I call home. Follow the link
+            below for examples of my work and a form to contact myself directly
+            for photoshoots.
+          </p>
         </div>
-        <section id="secttwo">
-        <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>John Doe</h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
-    </div>
-    </section>
-  </div>
-</div>
+      </section>
+
+      <!-- SECTION 2 -->
+
+      <section id="secttwo">
+        <div class="d-grid gap-3">
+          <div class="row">
+            <div class="col-6">
+              <!-- card1 -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="cardtitles">RUGBY</div>
+                  </div>
+                  <div
+                    class="flip-card-back01 rounded-4 d-flex flex-row justify-content-center align-items-center"
+                  >
+                    <img
+                      class="rounded-4"
+                      src="/images/75b3424e-80b2-489d-8c62-41f01149c6ab.JPG"
+                      alt=""
+                      style="
+                        height: 100%;
+                        width: 50%;
+                        object-position: 100% 70%;
+                        object-fit: cover;
+                      "
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                      style="height: 100%; width: 50%"
+                    >
+                      <h1>That's me in the pink socks!</h1>
+                      <p>
+                        I play for the Berlin Bruisers. This shot was taken
+                        during a Touch Rugby game in Paris!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <!-- card2 -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="cardtitles">FOOD</div>
+                  </div>
+                  <div
+                    class="flip-card-back02 rounded-4 d-flex flex-row justify-content-center align-items-center"
+                  >
+                    <img
+                      class="rounded-4"
+                      src="/images/IMG_6297.jpg"
+                      alt=""
+                      style="
+                        height: 100%;
+                        width: 50%;
+                        object-position: 100% 0%;
+                        object-fit: cover;
+                      "
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                      style="height: 100%; width: 50%"
+                    >
+                      <h1>Pasta with friends!</h1>
+                      <p>I love learning new recipes!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- card3 -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="cardtitles">HAIR</div>
+                  </div>
+                  <div
+                    class="flip-card-back03 rounded-4 d-flex flex-row justify-content-center align-items-center"
+                  >
+                    <img
+                      class="rounded-4"
+                      src="/images/3S9A0091.jpg"
+                      style="
+                        height: 100%;
+                        width: 50%;
+                        object-position: 100% 0%;
+                        object-fit: cover;
+                      "
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                      style="height: 100%; width: 50%"
+                    >
+                      <h1>Photoshoot time!</h1>
+                      <p>
+                        I love to work as part of a creative team in my free
+                        time!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <!-- card4 -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="cardtitles">ME</div>
+                  </div>
+                  <div
+                    class="flip-card-back04 rounded-4 d-flex flex-row justify-content-center align-items-center"
+                  >
+                    <img
+                      class="rounded-4"
+                      src="/images/Aido-8.jpg"
+                      style="
+                        height: 100%;
+                        width: 50%;
+                        object-position: 100% 0%;
+                        object-fit: cover;
+                      "
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                      style="height: 100%; width: 50%"
+                    >
+                      <h1>My name is Aidan!</h1>
+                      <p>I have been in Berlin for 7 years!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </section>
+
+      <section id="sectthree">
+        <iframe
+          class="rounded-4"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.6887883917616!2d13.403537290282284!3d52.50287282488155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e2c6ec270a1%3A0xc75e2bb5e7bcadec!2sSPREE%20CROSSFIT!5e0!3m2!1sen!2sde!4v1676985135272!5m2!1sen!2sde"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section id="sectfour">
+        <div
+          class="d-flex flex-row justify-content-center align-items-center"
+          id="contactarea"
+        >
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="fa-regular fa-address-card mb-4"></i>
+            <p class="mb-4">Address</p>
+            <p>10969 Berlin</p>
+          </div>
+
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-mobile-screen-button mb-4"></i>
+            <p class="mb-4">Phone</p>
+            <p>01525 1234567</p>
+          </div>
+
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="fa-regular fa-envelope mb-4"></i>
+            <p class="mb-4">Email</p>
+            <p>aidan.nee@students.beaminstitute.org</p>
+          </div>
+        </div>
+      </section>
+      <section id="hardskills">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slides">
+              <div id="slides__1" class="slide">
+                <a class="slide__prev" href="#slides__4" title="Next"></a>
+                <a class="slide__next" href="#slides__2" title="Next"></a>
+              </div>
+
+              <div id="slides__2" class="slide">
+                <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                <a class="slide__next" href="#slides__3" title="Next"></a>
+              </div>
+
+              <div id="slides__3" class="slide">
+                <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                <a class="slide__next" href="#slides__4" title="Next"></a>
+              </div>
+
+              <div id="slides__4" class="slide">
+                <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a>
+              </div>
+              <div id="slides__5" class="slide">
+                <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </body>

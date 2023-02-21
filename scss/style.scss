@@ -18,9 +18,9 @@ body {
 }
 
 .banner {
-  //   position: relative;
-  //   height: 100vh;
-  background-image: url(/images/background.jpg),
+  position: relative;
+  height: 100vh;
+  background-image: url(/images/aakash-dhage-nARm1vWkl1I-unsp.jpg),
     linear-gradient(transparent, black);
 
   background-repeat: no-repeat;
@@ -28,26 +28,29 @@ body {
   background-size: cover;
 
   h1 {
+    margin-bottom: v.$btmmar;
     font-family: "Gajraj One", cursive;
     letter-spacing: 5px;
-    margin: 200px 0px 100px 0px;
     font-size: 150px;
     background: -webkit-linear-gradient(white, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  #parag {
-    width: 50%, auto;
+  marquee {
+    font-family: "Gajraj One", cursive;
+    font-size: 100px;
+    color: v.$title-col;
+    margin-bottom: v.$btmmar;
   }
 
-  #fade {
-    // position: absolute;
-    // top: 66%;
-    width: 100vw;
-    height: 300px;
-    background-image: linear-gradient(transparent, black);
-  }
+  // #fade {
+  //   position: sticky;
+  //   top: 1000%;
+  //   width: 100vw;
+  //   height: 500px;
+  //   background-image: linear-gradient(transparent, black);
+  // }
 }
 
 .buttonarea {
@@ -58,17 +61,20 @@ body {
 
 // SECTION 1
 #bgfade {
-  background-image: linear-gradient(black, grey);
+  background-image: linear-gradient(v.$backslate, #353c4c);
 }
 #sectone {
   width: 80%;
 }
 nav {
   //   position: -webkit-sticky;
+  background-color: transparent;
   position: sticky;
   top: 0;
   padding: 10px 0;
   width: 100%;
+  z-index: 10;
+  margin: v.$btmmar;
   ul {
     padding: 0;
     margin: 0;
@@ -97,19 +103,18 @@ nav {
     }
   }
 }
-
-marquee {
-  font-family: "Gajraj One", cursive;
-  font-size: 100px;
-  color: v.$title-col;
+#bio {
+  padding: 100px 0;
+  width: v.$par-mar;
+  margin: auto;
 }
 
 // SECTION 2
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   perspective: 1000px;
 }
 
@@ -120,7 +125,6 @@ marquee {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -128,7 +132,10 @@ marquee {
 }
 
 .flip-card-front,
-.flip-card-back {
+.flip-card-back01,
+.flip-card-back02,
+.flip-card-back03,
+.flip-card-back04 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -137,12 +144,138 @@ marquee {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
 
-.flip-card-back {
-  background-color: #2980b9;
+.flip-card-back01,
+.flip-card-back02,
+.flip-card-back03,
+.flip-card-back04 {
   color: white;
   transform: rotateY(180deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card-back01 {
+  background-color: #ff78f0;
+}
+.flip-card-back02 {
+  background-color: #f5ea5a;
+}
+.flip-card-back03 {
+  background-color: #39b5e0;
+}
+.flip-card-back04 {
+  background-color: #a31acb;
+}
+
+#secttwo {
+  i {
+    font-size: 200px;
+    background: -webkit-linear-gradient(white, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.cardtitles {
+  font-family: "Gajraj One", cursive;
+  font-size: 150px;
+  background: -webkit-linear-gradient(white, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+}
+
+// SECTION 3
+
+#sectthree {
+  margin-bottom: v.$btmmar;
+}
+
+//      SECTION 4
+
+#sectfour i {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(white, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// ! HARD SKILLS
+
+.slider-container {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.slider {
+  width: 100%;
+  max-width: 75%;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40%;
+  height: 200px;
+  margin-right: 0px;
+  background: transparent;
+  transform-origin: center center;
+  transform: scale(1);
+  scroll-snap-align: center;
+}
+
+.slide__text {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#slides__1 {
+  background-image: url(/images/HTML5_logo_and_wordmark.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+}
+#slides__2 {
+  background-image: url(/images/CSS3_logo_and_wordmark.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+}
+#slides__3 {
+  background-image: url(/images/Tailwind_CSS_Logo.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+}
+#slides__4 {
+  background-image: url(/images/Bootstrap_logo.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+}
+#slides__5 {
+  background-image: url(/images/JavaScript-Logo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
 }
