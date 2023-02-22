@@ -20,25 +20,24 @@ body {
 .banner {
   position: relative;
   height: 100vh;
-  background-image: url(/images/aakash-dhage-nARm1vWkl1I-unsp.jpg),
+  background-image: url(/images/backgroundcentered.png),
     linear-gradient(transparent, black);
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 
   h1 {
     margin-bottom: v.$btmmar;
-    font-family: "Gajraj One", cursive;
+    font-family: v.$titlesfont;
     letter-spacing: 5px;
     font-size: 150px;
-    background: -webkit-linear-gradient(white, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include m.titlegrad;
   }
 
   marquee {
-    font-family: "Gajraj One", cursive;
+    font-family: v.$titlesfont;
     font-size: 100px;
     color: v.$title-col;
     margin-bottom: v.$btmmar;
@@ -53,18 +52,13 @@ body {
   // }
 }
 
-.buttonarea {
-  //   position: relative;
-  padding: 50px 0 200px 0;
-  z-index: 1;
-}
+// SECTION 1 BIO
 
-// SECTION 1
 #bgfade {
   background-image: linear-gradient(v.$backslate, #353c4c);
 }
 #sectone {
-  width: 80%;
+  width: 75%;
 }
 nav {
   //   position: -webkit-sticky;
@@ -75,6 +69,7 @@ nav {
   width: 100%;
   z-index: 10;
   margin: v.$btmmar;
+
   ul {
     padding: 0;
     margin: 0;
@@ -84,38 +79,74 @@ nav {
     list-style-type: none;
     i {
       font-size: 3rem;
+      &:hover {
+        color: #03c4a1;
+      }
     }
   }
   a {
     font-size: 20px;
     text-decoration: none;
     color: v.$title-col;
-    :hover {
+    &:hover {
       cursor: pointer;
+      color: fuchsia;
     }
   }
   span {
     margin: 0;
     a {
-      font-family: "Gajraj One", cursive;
+      font-family: v.$titlesfont;
       letter-spacing: 7px;
-      font-size: 40px;
+      font-size: 50px;
+      @include m.titlegrad;
     }
   }
 }
 #bio {
   padding: 100px 0;
-  width: v.$par-mar;
+  width: v.$y-mar;
   margin: auto;
+  font-size: 20px;
+  h2 {
+    font-family: v.$titlesfont;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin-right: 100px;
+    @include m.titlegrad;
+  }
+  p {
+    font-size: 20px;
+  }
 }
 
-// SECTION 2
+// SECTION 2 CARDS
 
+.cardtitles {
+  font-family: "Gajraj One", cursive;
+  font-size: 125px;
+  @include m.titlegrad;
+}
+#sectcards {
+  width: v.$y-mar;
+  margin: auto;
+  i {
+    font-size: 200px;
+    background: -webkit-linear-gradient(white, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .flip-card {
   background-color: transparent;
   width: 100%;
-  height: 400px;
+  height: 300px;
   perspective: 1000px;
+
+  p {
+    font-size: 18px;
+    margin-top: 0;
+  }
 }
 
 .flip-card-inner {
@@ -157,52 +188,38 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .flip-card-back01 {
-  background-color: #ff78f0;
+  background-color: fuchsia;
 }
 .flip-card-back02 {
-  background-color: #f5ea5a;
+  background-color: green;
 }
 .flip-card-back03 {
-  background-color: #39b5e0;
+  background-color: #03c4a1;
 }
 .flip-card-back04 {
-  background-color: #a31acb;
+  background-color: #150485;
 }
 
-#secttwo {
-  i {
-    font-size: 200px;
-    background: -webkit-linear-gradient(white, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
+// SECTION 3 - CAROUSEL
+// #sectcar {
+//   margin-bottom: v.$btmmar;
+// }
 
-.cardtitles {
-  font-family: "Gajraj One", cursive;
-  font-size: 150px;
-  background: -webkit-linear-gradient(white, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 5px;
-}
-
-// SECTION 3
-
-#sectthree {
-  margin-bottom: v.$btmmar;
-}
-
-//      SECTION 4
-
-#sectfour i {
-  font-size: 3rem;
-  background: -webkit-linear-gradient(white, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+// .carousel-item {
+//   width: 500px;
+//   height: 700px;
+// }
 
 // ! HARD SKILLS
+#hardskills {
+  h2 {
+    font-family: v.$titlesfont;
+    @include m.titlegrad;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 50px 0;
+  }
+}
 
 .slider-container {
   background: transparent;
@@ -210,18 +227,19 @@ nav {
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-bottom: 50px;
 }
 
-.slider {
+.sliderr {
   width: 100%;
   max-width: 75%;
-  height: 400px;
+  height: 200px;
   margin: 20px;
   text-align: center;
   border-radius: 20px;
   position: relative;
 }
-.slides {
+.slidess {
   display: flex;
   overflow-x: scroll;
   position: relative;
@@ -229,24 +247,18 @@ nav {
   scroll-snap-type: x mandatory;
 }
 
-.slide {
+.slidah {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  width: 40%;
+  width: 30%;
   height: 200px;
   margin-right: 0px;
   background: transparent;
   transform-origin: center center;
   transform: scale(1);
   scroll-snap-align: center;
-}
-
-.slide__text {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: sans-serif;
 }
 
 #slides__1 {
@@ -278,4 +290,73 @@ nav {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
+}
+
+// SECTION 4 - CONTACT
+
+#contacttitles {
+  font-family: "Gajraj One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+  @include m.titlegrad;
+}
+
+#sectcontact {
+  padding: 100px 0;
+  i {
+    font-size: 3rem;
+    @include m.titlegrad;
+  }
+
+  h2 {
+    font-family: v.$titlesfont;
+    @include m.titlegrad;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+  }
+}
+
+.contact-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  perspective: 1000px;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.contact-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.contact-card:hover .contact-card-inner {
+  transform: rotateY(180deg);
+}
+
+.contact-card-front,
+.contact-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.contact-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.contact-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  background-color: transparent;
 }

@@ -5,3 +5,9 @@
   border-radius: 50%;
   border: 5px solid darkgrey;
 }
+
+@mixin titlegrad {
+  background: -webkit-linear-gradient(white, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
