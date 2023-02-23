@@ -25,7 +25,7 @@
     >
       <div
         id="ban.text"
-        class="d-flex flex-column justify-content-center z-2 align-items-center w-75"
+        class="d-flex flex-column justify-content-center z-2 align-items-center"
       >
         <div class="d-flex flex-row justify-content-center align-items-center">
           <h1 class="text-center">AIDAN NEE</h1>
@@ -45,24 +45,16 @@
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-        <!-- <div class="btn-group" role="group" aria-label="Basic outlined example">
-  <button type="button" class="btn btn-outline-secondary">Left</button>
-  <button type="button" class="btn btn-outline-secondary">Middle</button>
-  <button type="button" class="btn btn-outline-secondary">Right</button>
-</div> -->
       </div>
-
-      <!-- <div class="z-1" id="fade"></div> -->
     </div>
 
-   
-
     <div id="bgfade">
-
-       <!-- NAVBAR -->
-      <nav class="d-flex flex-row w-75 m-auto justify-content-between">
+      <!-- NAVBAR -->
+      <nav
+        class="d-flex flex-row m-auto align-items-center justify-content-between"
+      >
         <span><a href="#">A.N</a></span>
-        <ul class="d-flex flex-row">
+        <ul class="d-flex flex-row align-items-center">
           <li><a href="#bio">About</a></li>
           <li><a href="#sectcards">Interests</a></li>
           <li><a href="#sectcontact">Contact</a></li>
@@ -76,21 +68,13 @@
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
-         
-    
-      </ul>
-    </li>
         </ul>
-        
       </nav>
 
       <!--      SECTION 1 BIO      -->
 
-      <section class="w-100 w-md-75" id="sectone">
-        <div
-          id="bio"
-          class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-between align-items-center"
-        >
+      <section class="m-auto" id="sectbio">
+        <div id="bio">
           <h2>ABOUT ME</h2>
           <p>
             Born in the west of Ireland, I grew up in the quiet countryside
@@ -110,16 +94,20 @@
       <!-- SECTION 2 CARDS-->
 
       <section id="sectcards">
-        <div class="d-grid gap-3">
+        <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6 offset-lg-3">
               <!-- card1 RUGBY-->
-              <div class="flip-card">
+              <div id="rugby" class="flip-card">
                 <div class="flip-card-inner">
                   <div
                     class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
                   >
-                    <div class="cardtitles d-flex flex-column justify-content-center align-items-center">RUGBY</div>
+                    <div
+                      class="cardtitles d-flex flex-column justify-content-center align-items-center"
+                    >
+                      RUGBY
+                    </div>
                   </div>
                   <div
                     class="flip-card-back01 rounded-4 d-flex flex-row justify-content-center align-items-center"
@@ -131,20 +119,12 @@
                       style="
                         height: 100%;
                         width: 50%;
-                        object-position: 100% 70%;
+                        
                         object-fit: cover;
                       "
                     />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-center p-3"
-                      style="height: 100%; width: 50%"
-                    >
-                      <p>
-                        <b>That's me in the pink socks!</b> I play for the
-                        Berlin Bruisers; Germany's first queer rugby team! Being part of this team taugh a lot about communication, leadership and
-                        helping to motivate my team! This shot was taken during
-                        a Touch Rugby game in Paris!
-                      </p>
+                    <div id="cardtxt" style="height: 100%; width: 50%">
+                      <p>That's me in the pink socks!</p>
                     </div>
                   </div>
                 </div>
@@ -152,14 +132,18 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
               <!-- card2 FOOD-->
-              <div class="flip-card">
+              <div id="food" class="flip-card">
                 <div class="flip-card-inner">
                   <div
                     class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
                   >
-                    <div class="cardtitles d-flex flex-column justify-content-center align-items-center">FOOD</div>
+                    <div
+                      class="cardtitles d-flex flex-column justify-content-center align-items-center"
+                    >
+                      FOOD
+                    </div>
                   </div>
                   <div
                     class="flip-card-back02 rounded-4 d-flex flex-row justify-content-center align-items-center"
@@ -175,29 +159,25 @@
                         object-fit: cover;
                       "
                     />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-center p-3 m-0"
-                      style="height: 100%; width: 50%"
-                    >
-                      <p>
-                        Pasta with friends! Cooking is a skill and passion of
-                        mine! I love researching new ingredients, recipes and
-                        health benefits! Put this together with friends and you
-                        have my favourits combination! I love to host too!
-                      </p>
+                    <div id="cardtxt" style="height: 100%; width: 50%">
+                      <p>Pasta with friends!</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
               <!-- card3 HAIR-->
-              <div class="flip-card">
+              <div id="hair" class="flip-card">
                 <div class="flip-card-inner">
                   <div
                     class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
                   >
-                    <div class="cardtitles d-flex flex-column justify-content-center align-items-center">HAIR</div>
+                    <div
+                      class="cardtitles d-flex flex-column justify-content-center align-items-center"
+                    >
+                      HAIR
+                    </div>
                   </div>
                   <div
                     class="flip-card-back03 rounded-4 d-flex flex-row justify-content-center align-items-center"
@@ -212,15 +192,8 @@
                         object-fit: cover;
                       "
                     />
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-center p-3"
-                      style="height: 100%; width: 50%"
-                    >
-                      <p>
-                        <b>Photoshoot time!</b> I take every opportunity I can
-                        to get involved with other creatives! Whether it is a
-                        photoshoot or something for Fashio Week then I'm game!
-                      </p>
+                    <div id="cardtxt" style="height: 100%; width: 50%">
+                      <p>Photoshoot time!</p>
                     </div>
                   </div>
                 </div>
@@ -228,14 +201,18 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6">
-              <!-- card4 -->
-              <div class="flip-card">
+            <div class="col-12 col-lg-6 offset-lg-3">
+              <!-- card4 CROSSFIT-->
+              <div id="crossfit" class="flip-card">
                 <div class="flip-card-inner">
                   <div
                     class="flip-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
                   >
-                    <div class="cardtitles d-flex flex-column justify-content-center align-items-center">CROSSFIT</div>
+                    <div
+                      class="cardtitles d-flex flex-column justify-content-center align-items-center"
+                    >
+                      CROSSFIT
+                    </div>
                   </div>
                   <div
                     class="flip-card-back04 rounded-4 d-flex flex-row justify-content-center align-items-center"
@@ -251,18 +228,8 @@
                       referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
 
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-center p-3"
-                      style="height: 100%; width: 50%"
-                    >
-                      <p>
-                        <b>You'lll find me here every morning!</b> I discovered
-                        Crossfit in 2022: I like the
-                        intensity, the discipline and the team motivation
-                        created in this environment! The challenge is real but
-                        under the guidance of the coaches, it's way more fun!
-                      
-                      </p>
+                    <div id="cardtxt" style="height: 100%; width: 50%">
+                      <p>You'll find me here every morning!</p>
                     </div>
                   </div>
                 </div>
@@ -273,49 +240,48 @@
         </div>
       </section>
 
-      <!-- section 3 CAROUSEL -->
-
       <!-- HARDSKILLS -->
       <section id="hardskills">
         <h2 class="text-center">THE TOOLS I WORK WITH</h2>
-        <div class="slider-container">
-          <div class="sliderr">
-            <div class="slidess">
-              <div id="slides__1" class="slidah">
-                <a class="slide__prev" href="#slides__4" title="Next"></a>
-                <a class="slide__next" href="#slides__2" title="Next"></a>
-              </div>
-
-              <div id="slides__2" class="slidah">
-                <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                <a class="slide__next" href="#slides__3" title="Next"></a>
-              </div>
-
-              <div id="slides__3" class="slidah">
-                <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                <a class="slide__next" href="#slides__4" title="Next"></a>
-              </div>
-
-              <div id="slides__4" class="slidah">
-                <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                <a class="slide__next" href="#slides__1" title="Prev"></a>
-              </div>
-              <div id="slides__5" class="slidah">
-                <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                <a class="slide__next" href="#slides__1" title="Prev"></a>
-              </div>
-            </div>
+        <div class="rolling">
+          <div class="html">
+            <img src="/images/HTML5_logo_and_wordmark.svg" alt="" />
           </div>
-        </div>
+          <div class="css">
+            <img src="/images/CSS3_logo_and_wordmark.svg" alt="" />
+          </div>
+          <div class="tw">
+            <img src="/images/Tailwind_CSS_Logo.svg" alt="" />
+          </div>
+          <div class="boots">
+            <img src="/images/Bootstrap_logo.svg" alt="" />
+          </div>
+          <div class="java">
+            <img src="/images/JavaScript-Logo.png" alt="" />
+          </div>
+          <div class="html">
+            <img src="/images/HTML5_logo_and_wordmark.svg" alt="" />
+          </div>
+          <div class="css">
+            <img src="/images/CSS3_logo_and_wordmark.svg" alt="" />
+          </div>
+          <div class="tw">
+            <img src="/images/Tailwind_CSS_Logo.svg" alt="" />
+          </div>
+          <div class="boots">
+            <img src="/images/Bootstrap_logo.svg" alt="" />
+          </div>
+          <div class="java">
+            <img src="/images/JavaScript-Logo.png" alt="" />
+          </div>
+          
       </section>
 
-      <!-- section 4 CONTACT -->
+      <!-- section CONTACT -->
 
       <section id="sectcontact">
         <h2 class="text-center">GET IN CONTACT</h2>
-        <div
-          class="d-flex flex-row justify-content-center align-items-center"
-          id="contactarea"
+        <div id="contactarea"
         >
           <!-- address -->
           <div class="contact-card">
@@ -324,7 +290,7 @@
                 class="contact-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
               >
                 <i class="fa-regular fa-address-card mb-4"></i>
-                <p id="contacttitles" class="mb-4">ADDRESS</p>
+                <p id="contacttitles">ADDRESS</p>
               </div>
               <div
                 class="contact-card-back rounded-4 d-flex flex-row justify-content-center align-items-center"
@@ -340,7 +306,7 @@
                 class="contact-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
               >
                 <i class="fa-solid fa-mobile-screen-button mb-4"></i>
-                <p id="contacttitles" class="mb-4">PHONE</p>
+                <p id="contacttitles">PHONE</p>
               </div>
               <div
                 class="contact-card-back rounded-4 d-flex flex-row justify-content-center align-items-center"
@@ -356,7 +322,7 @@
                 class="contact-card-front rounded-4 d-flex flex-column justify-content-center align-items-center"
               >
                 <i class="fa-regular fa-envelope mb-4"></i>
-                <p id="contacttitles" class="mb-4">E-MAIL</p>
+                <p id="contacttitles">E-MAIL</p>
               </div>
               <div
                 class="contact-card-back rounded-4 d-flex flex-row justify-content-center align-items-center"
@@ -367,8 +333,8 @@
           </div>
         </div>
       </section>
-      
-      <footer class="text-center pb-5">&copy; 2023 All rights reserved</footer>
+
+      <footer class="text-center">&copy; 2023 All rights reserved</footer>
     </div>
   </body>
 </html>
