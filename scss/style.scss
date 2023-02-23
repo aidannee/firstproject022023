@@ -377,8 +377,8 @@ nav {
   // !BIO
   #sectbio {
     padding: 20px;
-    height: 50vh;
-    width: 100vw;
+    height: 100vh;
+    width: 90vw;
     margin: 0 auto;
 
     #bio {
@@ -397,7 +397,7 @@ nav {
       font-size: 33px;
     }
     p {
-      font-size: 24px;
+      font-size: 17px;
     }
   }
   // !CARDS
@@ -411,14 +411,14 @@ nav {
     height: 20vh;
     #cardtxt {
       p {
-        font-size: 25px;
+        font-size: 18px;
       }
     }
   }
 
   // !HARDSKILLS
   #hardskills {
-    height: 25vh;
+    height: 35vh;
     padding-top: 20px;
 
     h2 {
@@ -433,10 +433,10 @@ nav {
     .tw,
     .boots,
     .java {
-      height: 15vh;
+      height: 25vh;
     }
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     img {
       height: 15vh;
       min-width: 100px;
@@ -445,7 +445,7 @@ nav {
 
   // !CONTACT
   #sectcontact {
-    height: 35vh;
+    height: 40vh;
     padding: 0 20px;
     h2 {
       font-size: 30px;
@@ -466,7 +466,7 @@ nav {
     height: 10vh;
     width: 10vh;
     p {
-      font-size: 20px;
+      font-size: 15px;
     }
   }
 }

@@ -345,8 +345,8 @@ nav span a {
   }
   #sectbio {
     padding: 20px;
-    height: 50vh;
-    width: 100vw;
+    height: 100vh;
+    width: 90vw;
     margin: 0 auto;
   }
   #sectbio #bio {
@@ -364,7 +364,7 @@ nav span a {
     font-size: 33px;
   }
   #sectbio p {
-    font-size: 24px;
+    font-size: 17px;
   }
   #sectcards {
     height: 80vh;
@@ -376,10 +376,10 @@ nav span a {
     height: 20vh;
   }
   .flip-card #cardtxt p {
-    font-size: 25px;
+    font-size: 18px;
   }
   #hardskills {
-    height: 25vh;
+    height: 35vh;
     padding-top: 20px;
   }
   #hardskills h2 {
@@ -389,21 +389,21 @@ nav span a {
   }
   .rolling {
     width: 100%;
-    height: 15vh;
+    height: 25vh;
   }
   .rolling .html,
   .rolling .css,
   .rolling .tw,
   .rolling .boots,
   .rolling .java {
-    height: 15vh;
+    height: 25vh;
   }
   .rolling img {
     height: 15vh;
     min-width: 100px;
   }
   #sectcontact {
-    height: 35vh;
+    height: 40vh;
     padding: 0 20px;
   }
   #sectcontact h2 {
@@ -424,7 +424,7 @@ nav span a {
     width: 10vh;
   }
   .contact-card p {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
