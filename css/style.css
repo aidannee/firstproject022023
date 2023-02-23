@@ -325,7 +325,7 @@ nav span a {
   }
   .banner h1,
   .banner marquee {
-    font-size: 100px;
+    font-size: 80px;
   }
   nav {
     padding: 2px 20px;
@@ -334,18 +334,18 @@ nav span a {
     padding-left: 7px;
   }
   nav li i {
-    font-size: 18px;
+    font-size: 13px;
   }
   nav a {
-    font-size: 18px;
+    font-size: 13px;
   }
   nav span a {
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 22px;
   }
   #sectbio {
     padding: 20px;
-    height: 70vh;
+    height: 80vh;
     width: 80vw;
     margin: 0 auto;
   }
@@ -364,7 +364,7 @@ nav span a {
     font-size: 33px;
   }
   #sectbio p {
-    font-size: 17px;
+    font-size: 15px;
   }
   #sectcards {
     height: 80vh;
