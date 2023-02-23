@@ -344,11 +344,10 @@ nav span a {
     font-size: 25px;
   }
   #sectbio {
-    padding: 0 20px;
+    padding: 20px;
     height: 50vh;
     width: 100vw;
     margin: 0 auto;
-    margin-bottom: 100px;
   }
   #sectbio #bio {
     padding: 0;
@@ -377,7 +376,7 @@ nav span a {
     height: 20vh;
   }
   .flip-card #cardtxt p {
-    font-size: 17px;
+    font-size: 25px;
   }
   #hardskills {
     height: 25vh;
@@ -454,11 +453,10 @@ nav span a {
     font-size: 35px;
   }
   #sectbio {
-    padding: 0 20px;
+    padding: 30px;
     height: 50vh;
     width: 100vw;
     margin: 0 auto;
-    margin-bottom: 100px;
   }
   #sectbio #bio {
     padding: 0;
