@@ -157,7 +157,7 @@ nav span a {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -294,7 +294,7 @@ nav span a {
   transform-style: preserve-3d;
 }
 
-.contact-card:hover .contact-card-inner {
+.contact-card:hover .contact-card:active .contact-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -375,6 +375,9 @@ nav span a {
   .flip-card {
     height: 20vh;
   }
+  .flip-card:active {
+    transform: rotateY(180deg);
+  }
   .flip-card #cardtxt p {
     font-size: 18px;
   }
@@ -422,6 +425,9 @@ nav span a {
   .contact-card {
     height: 10vh;
     width: 10vh;
+  }
+  .contact-card:active {
+    transform: rotateY(180deg);
   }
   .contact-card p {
     font-size: 15px;
